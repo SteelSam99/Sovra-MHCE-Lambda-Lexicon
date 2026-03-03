@@ -13,14 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Restore unlock state
-  Object.keys(unlockMap).forEach(key => {
-    const targets = Array.isArray(unlockMap[key]) ? unlockMap[key] : [unlockMap[key]];
-    targets.forEach(id => {
-      if (localStorage.getItem(`unlocked_${id}`) === "true") {
-        unlock(id);
-      }
-    });
+  // Restore unlock state on page load
+  Object.values(unlockMap).flat().forEach(id => {
+    if (localStorage.getItem(`unlocked_${id}`) === "true") {
+      unlock(id);
+    }
   });
 
   // Copy and unlock logic
@@ -28,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       const entryId = button.dataset.entry;
       const text = document.querySelector(`#${entryId} .entry-text`).innerText;
+
       navigator.clipboard.writeText(text).then(() => {
         const toUnlock = unlockMap[entryId];
         if (toUnlock) {
