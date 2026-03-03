@@ -12,7 +12,7 @@ body {
   background-position: center;
   background-repeat: repeat;
   background-color: #0e0e0e;
-  padding: 1.5rem 1rem;
+  padding: 1.25rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,34 +20,42 @@ body {
 }
 
 .logo-container {
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0.75rem;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 0.5rem;
 }
 
 .mhce-logo {
-  max-width: 70vw;
-  max-height: 180px;
+  width: 100%;
+  height: auto;
+  max-height: 160px;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 0 12px #00ff88);
+  filter: drop-shadow(0 0 10px #00ff88);
   animation: pulseGlow 3s ease-in-out infinite;
 }
 
 @keyframes pulseGlow {
   0%, 100% {
-    filter: drop-shadow(0 0 12px #00ff88);
+    filter: drop-shadow(0 0 10px #00ff88);
   }
   50% {
-    filter: drop-shadow(0 0 24px #00ff88);
+    filter: drop-shadow(0 0 20px #00ff88);
   }
 }
 
 .site-header h1 {
-  font-size: 1.8rem;
-  margin: 0.5rem 0;
+  font-size: 1.6rem;
+  margin: 0.4rem 0 0.2rem;
 }
+
+.subtitle {
+  font-style: italic;
+  color: #aaa;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
 
 .subtitle {
   font-style: italic;
