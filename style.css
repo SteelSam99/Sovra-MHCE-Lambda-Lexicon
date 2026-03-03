@@ -20,21 +20,20 @@ body {
 }
 
 .logo-container {
-  width: 100%;
-  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 0.5rem;
 }
 
 .mhce-logo {
-  width: 100%;
-  max-width: 280px;
-  height: auto;
+  width: 75px;
+  height: 75px;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 0 8px #00ff88);
+  filter: drop-shadow(0 0 6px #00ff88);
   animation: pulseGlow 3s ease-in-out infinite;
 }
-
 
 @keyframes pulseGlow {
   0%, 100% {
@@ -45,9 +44,8 @@ body {
   }
 }
 
-.site-header h1 {
-  font-size: 1.5rem;
-  margin: 0.4rem 0 0.2rem;
+.site-header {
+  padding: 1rem 1rem 0.75rem;
 }
 
 .subtitle {
