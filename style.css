@@ -7,12 +7,17 @@ body {
 }
 
 .site-header {
+  background-image: url('/neural-matrix-wallpaper.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-color: #0e0e0e;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 1rem;
-  background-color: #1a1a1a;
 }
+
 
 .logo-container {
   max-width: 100%;
