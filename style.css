@@ -7,12 +7,12 @@ body {
 }
 
 .site-header {
-  background-image: url('/neural-matrix1-wallpaper.png');
+  background-image: url('/neural-matrix2.png');
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
   background-color: #0e0e0e;
-  padding: 1.25rem 1rem 1rem;
+  padding: 1rem 1rem 0.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +29,7 @@ body {
 }
 
 .mhce-logo {
-  width: 52px;       /* 70% of 75px */
+  width: 52px;
   height: 52px;
   object-fit: contain;
   display: block;
@@ -46,17 +46,10 @@ body {
   }
 }
 
-.site-header {
-  padding: 1rem 1rem 0.75rem;
+.site-header h1 {
+  font-size: 1.5rem;
+  margin: 0.4rem 0 0.2rem;
 }
-
-.subtitle {
-  font-style: italic;
-  color: #aaa;
-  font-size: 0.95rem;
-  margin: 0;
-}
-
 
 .subtitle {
   font-style: italic;
@@ -132,8 +125,8 @@ footer {
 
 @media (max-width: 600px) {
   .mhce-logo {
-    max-width: 90vw;
-    max-height: 140px;
+    width: 48px;
+    height: 48px;
   }
 
   .site-header h1 {
