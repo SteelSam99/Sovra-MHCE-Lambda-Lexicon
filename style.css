@@ -20,6 +20,8 @@ body {
 }
 
 .logo-container {
+  width: auto;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,11 +29,11 @@ body {
 }
 
 .mhce-logo {
-  width: 75px;
-  height: 75px;
+  width: 52px;       /* 70% of 75px */
+  height: 52px;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 0 6px #00ff88);
+  filter: drop-shadow(0 0 5px #00ff88);
   animation: pulseGlow 3s ease-in-out infinite;
 }
 
