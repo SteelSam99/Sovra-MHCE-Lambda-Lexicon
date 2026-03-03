@@ -30,6 +30,17 @@ body {
   max-height: 250px;
   object-fit: contain;
   display: block;
+  filter: drop-shadow(0 0 12px #00ff88);
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 12px #00ff88);
+  }
+  50% {
+    filter: drop-shadow(0 0 24px #00ff88);
+  }
 }
 
 .subtitle {
