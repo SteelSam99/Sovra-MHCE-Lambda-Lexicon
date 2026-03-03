@@ -18,7 +18,6 @@ body {
   align-items: center;
 }
 
-
 .logo-container {
   max-width: 100%;
   display: flex;
@@ -31,12 +30,6 @@ body {
   max-height: 250px;
   object-fit: contain;
   display: block;
-}
-
-h1 {
-  margin: 0.5rem 0 0.25rem;
-  font-size: 1.8rem;
-  font-weight: 600;
 }
 
 .subtitle {
