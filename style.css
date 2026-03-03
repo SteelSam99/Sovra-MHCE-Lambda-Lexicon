@@ -29,8 +29,8 @@ body {
 }
 
 .mhce-logo {
-  width: 52px;
-  height: 52px;
+  width: 325px;
+  height: 325px;
   object-fit: contain;
   display: block;
   filter: drop-shadow(0 0 5px #00ff88);
