@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sovra-mhce-lambda-lexicon.vercel.app/sitemap.xml
